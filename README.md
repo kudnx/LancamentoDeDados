@@ -1,6 +1,6 @@
 ## Lancamento De Dados
 
-<p>Primeiro projeto desenvolvido na **Dev**Venture**|**2°**Edição**</p>
+<p>Primeiro projeto desenvolvido na Dev Venture | 2° Edição.</p>
 
 #### Descrição do Projeto
 

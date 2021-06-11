@@ -3,8 +3,10 @@ package com.devventure.lancamentodedados
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 class RegisterUser : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,10 +17,15 @@ class RegisterUser : AppCompatActivity() {
         val btnEnter   = findViewById<Button>(R.id.btnEnter)
 
         btnEnter.setOnClickListener{
-            val player = playerName.text.toString()
-            val intent = Intent(this,MainActivity::class.java)
-            intent.putExtra("playerName", player)
-            startActivity(intent)
+            if (TextUtils.isEmpty(playerName.text.toString())) {
+                Toast.makeText(this, "Digite o nome do jogador!",
+                    Toast.LENGTH_SHORT).show()
+            }else {
+                val player = playerName.text.toString()
+                val intent = Intent(this,MainActivity::class.java)
+                intent.putExtra("playerName", player)
+                startActivity(intent)
+            }
         }
     }
 }

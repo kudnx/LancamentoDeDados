@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lancamento De Dados</string>
+    <string name="Welcome">Welcome %s</string>
+    <string name="userNamePlaceholder">Digite o nome do Usuário</string>
+    <string name="btnEnterApp">Entrar</string>
+    <string name="btnPlay">Jogar</string>
 </resources>

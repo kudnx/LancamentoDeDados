@@ -16,6 +16,11 @@ class MainActivity : AppCompatActivity() {
         val dado02 = findViewById<ImageView>(R.id.dado2)
         val btn = findViewById(R.id.button) as Button
 
+        val player = intent.getStringExtra("playerName")
+        val welcomeText = findViewById<TextView>(R.id.WelcomeMessage)
+
+        welcomeText.text =  getString(R.string.Welcome, player)
+
         val images = listOf(R.drawable.dice_1, R.drawable.dice_2, R.drawable.dice_3,
                       R.drawable.dice_4, R.drawable.dice_5, R.drawable.dice_6);
 

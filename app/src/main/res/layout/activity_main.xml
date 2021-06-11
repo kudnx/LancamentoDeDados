@@ -6,41 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/WelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/Welcome"
+        app:layout_constraintBottom_toTopOf="@+id/dado2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/dado1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginEnd="43dp"
-        app:layout_constraintBottom_toBottomOf="@+id/dado2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/dado2"
+        app:layout_constraintHorizontal_bias="0.582"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/dado2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199"
         app:srcCompat="@drawable/dice_1" />
 
     <ImageView
         android:id="@+id/dado2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="118dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="84dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/dado1"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199"
         app:srcCompat="@drawable/dice_1" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="341dp"
-        android:text="Jogar"
         android:backgroundTint="@color/green_red_color_state"
+        android:text="@string/btnPlay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dado2" />
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeMessage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

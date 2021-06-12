@@ -16,4 +16,4 @@ uma tela para o usuário inserir o seu nome antes da tela para jogar os dados. E
 
 ### Aplicativo em funcionamento
 
-https://user-images.githubusercontent.com/46246718/121787083-7d265b80-cb9a-11eb-84b2-c4eedf295b0f.mp4
+[![Aplicativo em funcionamento](https://user-images.githubusercontent.com/46246718/121787083-7d265b80-cb9a-11eb-84b2-c4eedf295b0f.mp4)

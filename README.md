@@ -1,3 +1,4 @@
+
 ## Lancamento De Dados
 
 <p>Primeiro projeto desenvolvido na Dev Venture | 2° Edição.</p>
@@ -12,3 +13,7 @@
 
 3. Primeiramente, fazer a tela de jogada, com um botão que ao apertar chama uma função e calcula dois numeros aleatórios entre 1 e 6 e mostra ao usuário. Após isso pode-se contruir
 uma tela para o usuário inserir o seu nome antes da tela para jogar os dados. Em terceiro seria contruir uma animação que representaria a jogada de dados, para prover um feedback mais amigável ao usuário.
+
+### Aplicativo em funcionamento
+
+https://user-images.githubusercontent.com/46246718/121787083-7d265b80-cb9a-11eb-84b2-c4eedf295b0f.mp4

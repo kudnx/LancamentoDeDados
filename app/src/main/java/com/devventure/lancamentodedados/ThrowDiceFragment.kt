@@ -25,12 +25,11 @@ class ThrowDiceFragment : Fragment() {
         val dado01 = binding?.dado1
         val dado02 = binding?.dado2
         val btn = binding?.button as Button
-
-        val player = "playerName"
         val welcomeText = binding?.WelcomeMessage
         val shareButton = binding?.share
+        val playerName = arguments?.getString("playerName")
 
-        welcomeText?.text =  getString(R.string.Welcome, player)
+        welcomeText?.text = getString(R.string.Welcome, playerName)
 
         val images = listOf(R.drawable.dice_1, R.drawable.dice_2, R.drawable.dice_3,
             R.drawable.dice_4, R.drawable.dice_5, R.drawable.dice_6);
@@ -47,14 +46,14 @@ class ThrowDiceFragment : Fragment() {
 
         shareButton?.setOnClickListener {
             val intent = Intent(Intent.ACTION_SEND)
-            intent.putExtra(Intent.EXTRA_TEXT, "O Jogador $player tirou o número: $soma")
+            intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.result, playerName, soma))
             intent.type = "text/plain"
 
             activity?.packageManager?.run {
                 if (intent.resolveActivity(this) != null){
                     startActivity(intent)
                 } else {
-                    Toast.makeText(context, "Você não possui o aplicativo instalado!!",
+                    Toast.makeText(context, getString(R.string.appNotFound),
                         Toast.LENGTH_LONG).show()
                 }
             }

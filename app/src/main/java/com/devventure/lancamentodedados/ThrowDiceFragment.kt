@@ -2,19 +2,16 @@ package com.devventure.lancamentodedados
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.devventure.lancamentodedados.databinding.FragmentThrowDiceBinding
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ThrowDiceFragment : Fragment() {
-    var binding : FragmentThrowDiceBinding? = null
+    private var binding : FragmentThrowDiceBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -61,7 +58,7 @@ class ThrowDiceFragment : Fragment() {
         return binding?.root
     }
 
-    fun geraNumeroAleatorio() : Int {
+    private fun geraNumeroAleatorio() : Int {
         return (0..5).random()
     }
 }
